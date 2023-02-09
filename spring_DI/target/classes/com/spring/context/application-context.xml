@@ -47,20 +47,18 @@
 	<bean id="memberService"  class="com.spring.service.MemberServiceImpl"
 	p:memberDAO-ref="memberDAOBean"
 	/>
-<!-- 	<bean id="menuService" class="com.jsp.service.MenuServiceImpl" -->
-<!-- 	p:menuDAO-ref="menuDAO" -->
-<!-- 	p:sqlSessionFactory-ref="sqlSessionFactory" -->
-<!-- 	/> -->
+	<bean id="menuService" class="com.jsp.service.MenuServiceImpl"
+	p:menuDAO-ref="menuDAOBean"
+	/>
 	<bean id="noticeService" class="com.spring.service.NoticeServiceImpl"
 	p:noticeDAO-ref="noticeDAOBean"
 	/>
 	<bean id="boardService" class="com.spring.service.BoardServiceImpl"
 	p:boardDAO-ref="boardDAOBean"
 	/>
-<!-- 	<bean id="replyService" class="com.jsp.service.ReplyServiceImpl" -->
-<!-- 	p:replyDAO-ref="replyDAO" -->
-<!-- 	p:sqlSessionFactory-ref="sqlSessionFactory" -->
-<!-- 	/> -->
+	<bean id="replyService" class="com.jsp.service.ReplyServiceImpl"
+	p:replyDAO-ref="replyDAOBean"
+	/>
 	<bean id="pdsService" class="com.spring.service.PdsServiceImpl"
 	p:attachDAO-ref="attachDAOBean"
 	p:pdsDAO-ref="pdsDAOBean"
