@@ -12,7 +12,8 @@
 	<bean id="dataSource"
 		class="org.apache.commons.dbcp2.BasicDataSource"
 		p:driverClassName="oracle.jdbc.driver.OracleDriver"
-		p:url="jdbc:oracle:thin:@localhost:1521:XE" p:username="JSP"
+		p:url="jdbc:oracle:thin:@localhost:1521:XE" 
+		p:username="JSP"
 		p:password="JSP" />
 		
 		<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
