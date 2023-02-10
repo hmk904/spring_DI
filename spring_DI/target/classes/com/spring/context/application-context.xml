@@ -55,6 +55,7 @@
 	/>
 	<bean id="boardService" class="com.spring.service.BoardServiceImpl"
 	p:boardDAO-ref="boardDAOBean"
+	p:replyDAO-ref="replyDAOBean"
 	/>
 	<bean id="replyService" class="com.jsp.service.ReplyServiceImpl"
 	p:replyDAO-ref="replyDAOBean"

@@ -16,18 +16,18 @@
 		p:username="JSP"
 		p:password="JSP" />
 		
-		<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
 		p:dataSource-ref="dataSource"
 		p:configLocation="classpath:com/spring/mybatis/config/sqlConfig.xml"
 		p:mapperLocations="classpath:com/spring/mybatis/mappers/*-Mapper.xml"
-		/>
+	/>
 		
-		<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate"
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate"
 		c:sqlSessionFactory-ref="sqlSessionFactory"
-		/>
+	/>
 		
-		<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
 		p:dataSource-ref="dataSource"
-		  />
+	/>
 		
 </beans>
